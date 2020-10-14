@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YAML Converter</title>
+    <script src="converter.js"></script>
+    <link rel="stylesheet" href="converter.css">
+</head>
+
+<body>
+<div class="container">
+    <label for="endpoint"><b>Endpoint</b></label>
+    <input id="endpoint" type="text" placeholder="Enter Endpoint" name="endpoint" required autocomplete="on">
+    <label for="username"><b>Username</b></label>
+    <input id="username" type="text" placeholder="Enter Username" name="username" required autocomplete="on">
+    <label for="password"><b>Password</b></label>
+    <input id="password" type="text" placeholder="Enter Password" name="password" required autocomplete="on">
+
+    <button type="submit" onclick="accept()">Accept</button>
+</div>
+
+<div class="requester">
+    <label for="request"><b>Request</b></label>
+    <input id="request" type="text" placeholder="Enter Request" name="request" required autocomplete="on">
+
+    <label for="body"><b>Body</b></label>
+    <input id="body" type="text" placeholder="Enter Body" name="body" required autocomplete="on">
+
+    <button type="submit" onclick="generate()">Generate</button>
+</div>
+</body>
+</html>
